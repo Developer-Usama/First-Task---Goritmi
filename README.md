@@ -85,4 +85,5 @@ This project implements a basic authentication system with clean, organized code
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Developer-Usama-JDN/First-Task---Goritmi.git
+
