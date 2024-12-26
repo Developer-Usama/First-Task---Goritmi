@@ -71,15 +71,15 @@ function sendResetEmail($toEmail, $token)
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'usamashafi0011@gmail.com';
-        $mail->Password = 'dpna sxks bhgq kcut';
+        $mail->Username = 'your email';
+        $mail->Password = 'your password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('usamashafi0011@gmail.com', 'Goritmi Com');
+        $mail->setFrom('your email', 'Goritmi Com');
         $mail->addAddress($toEmail);
 
-        $resetLink = "http://localhost/php%20work/Task%20(Goritmi)/pages/reset_password.php?token=$token";
+        $resetLink = "your-path-to-this-files/Task%20(Goritmi)/pages/reset_password.php?token=$token";
         $mail->isHTML(true);
         $mail->Subject = 'Password Reset Request';
         $mail->Body = "<p>Click the link below to reset your password:</p>
